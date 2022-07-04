@@ -1,0 +1,14 @@
+<ol class="list-group">
+  <ng-template ngFor let-item [ngForOf]="items" let-i="index">
+    <li class="list-group-item d-flex justify-content-between align-items-start" *ngIf="!item.deleted">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">{{i}}. Subheading</div>
+          This is {{i}}th item
+        </div>
+        <button type="button" class="btn btn-outline-danger" (click)="delete(item)">
+          <i class="bi bi-trash-fill"></i>
+        </button>
+    </li>
+  </ng-template>
+  
+</ol>
