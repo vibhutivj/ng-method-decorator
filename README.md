@@ -1,5 +1,10 @@
 # CustomDecorator
 
+Custom method decorator for Confirm action.  
+ngx-modal invoked through Decorator  
+ngx-modal invoked through service via Decorator  
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 
 ## Development server
