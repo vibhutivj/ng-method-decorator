@@ -16,13 +16,21 @@ export class AppComponent {
   //new Array(10).fill({deleted: false}); // Bad when filling with objevt as the objects will have same reference
   bsModalRef?: BsModalRef;
 
-  constructor(public bsModalService: BsModalService,
+  constructor(
+    public bsModalService: BsModalService,
     public confirmService: ConfirmService) {
     this.items = [...this.items];
   }
 
   // @Confirmable("confirmService")
-  @ConfirmableAgain("bsModalService")
+  @ConfirmableAgain(
+    "bsModalService",
+    {
+      header: 'My Header',
+      message: 'Custom message: confirm delete?',
+      okButtonText: 'Yes delete :)',
+      cancelButtonText: 'No!!'
+    })
   delete(item: any): void {
     // Without decorator
     /*const config = {

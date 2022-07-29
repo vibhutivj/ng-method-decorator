@@ -13,6 +13,11 @@ export class ConfirmComponent implements OnInit {
   onOk: Function | undefined;
   onExit: Function | undefined;
 
+  header: string | undefined;
+  message: string | undefined;
+  okButtonText: string | undefined;
+  cancelButtonText: string | undefined;
+
   constructor(
     private bsModalService: BsModalService,
     private modalRef: BsModalRef,
