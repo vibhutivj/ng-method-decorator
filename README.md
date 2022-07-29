@@ -5,7 +5,27 @@ ngx-modal invoked through Decorator
 ngx-modal invoked through service via Decorator  
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.  
+
+## Sample Usage
+
+Decorate your method, which needs user confirmation before execution
+
+@ConfirmableAgain(
+    "bsModalService",
+    {
+      header: 'My Header',
+      message: 'Custom message: confirm delete?',
+      okButtonText: 'Yes delete :)',
+      cancelButtonText: 'No!!'
+    })
+myMethod() {
+    // executes once user confirms
+}
+
+refer: src\app\app.component.ts  
+
+Decorator: src\app\decorators\confirmAgain.decorator.ts  
 
 ## Development server
 
