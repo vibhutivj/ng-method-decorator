@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Sample Usage
 
 Decorate your method, which needs user confirmation before execution
-
+```
 @ConfirmableAgain(
     "bsModalService",
     {
@@ -22,6 +22,7 @@ Decorate your method, which needs user confirmation before execution
 myMethod() {
     // executes once user confirms
 }
+```
 
 refer: src\app\app.component.ts  
 
